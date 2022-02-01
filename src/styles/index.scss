@@ -2,12 +2,12 @@
 @import './settings';
 
 // Import pages styles
-@import './pages/about';
-@import './pages/home';
-@import './pages/notFound';
+// @import './pages/about';
+@import 'pages/Home/home';
+// @import './pages/notFound';
 
 // Import components styles
-@import './components/navigation';
+@import 'components/Navigation/navigation';
 // @import './components/footer';
 // @import './components/hamburgerMenu';
 // @import './components/errorModal';
