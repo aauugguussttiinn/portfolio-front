@@ -22,7 +22,7 @@
       content: '';
       width: 0;
       height: 3px;
-      background: var(--basic-color-dark);
+      background: var(--basic-color-white);
       position: absolute;
       bottom: 1px;
       left: 50%;
@@ -31,7 +31,7 @@
       transition: all .5s;
     }
     &:hover{
-    color:var(--basic-color-dark);
+    color:var(--basic-color-white);
       &::after{
         width: 85%;
       }
