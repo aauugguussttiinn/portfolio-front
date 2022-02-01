@@ -2,10 +2,10 @@
 import { useContext } from "react";
 
 // CONTEXTS IMPORTS
-import DarkMode from "./context/darkMode";
+import DarkMode from "context/darkMode";
 
 
-const DarkModeBtn = () => {
+const DarkModeButton = () => {
   const { isDark, toogleMode } = useContext(DarkMode);
 
   return (
@@ -34,4 +34,4 @@ const DarkModeBtn = () => {
   );
 }
 
-export default DarkModeBtn;
+export default DarkModeButton;
