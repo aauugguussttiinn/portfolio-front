@@ -142,7 +142,7 @@ $phone-viewport:800px;
   --jumbotron-down:#{$jb-d-n};
 
 }
-.dark-mode{
+.dark-mode {
 
   --modal-background:#{$modal-bg-dark};
   --modal-color:#{$basic-color-dark};
@@ -232,22 +232,6 @@ body{
   min-height: 100vh;
 }
 
-
-main {
-  flex: 1;
-}
-
-a {
-  text-decoration: none !important;
-  color: $third-color !important;
-  font-weight: normal !important;
-  font-family: 'Verdana' !important;
-}
-
-
-.clickable {
-  cursor: pointer;
-}
 
 /* ------------------------- FLEX ------------------------- */
 
@@ -652,38 +636,26 @@ h6 {
 
 /* ------------------------- TEXT STYLING ------------------------- */
 
-.text-primary {
-  color: $prim-color !important;
+.text-primary-color {
+  color: var(--prim-color);
 }
 
-.text-secondary {
-  color: $sec-color !important;
+.text-secondary-color {
+  color: var(--sec-color);
 }
 
-.text-secondary-deep {
-  color: $sec-color-deep !important;
+.text-third-color {
+  color: var(--third-color);
 }
 
-.text-third {
-  color: $third-color !important;
+.text-success-color {
+  color: var(--success-color);
 }
 
-.text-third-light {
-  color: $third-color-light !important;
+.text-danger-color {
+  color: var(--danger-color);
 }
 
-.text-success {
-  color: $success !important;
-}
-
-.text-danger {
-  color: $danger !important;
-}
-
-.text-warning {
-  color: $warning !important;
-}
-
-.text-white {
-  color: $basic-color-white !important;
+.text-warning-color {
+  color: var(--warning-color)
 }

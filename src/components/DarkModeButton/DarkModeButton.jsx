@@ -10,13 +10,7 @@ const DarkModeButton = () => {
 
   return (
     <div className="toggleWrapper" id="whateveriwant">
-      <input
-        type="checkbox"
-        className=""
-        id="checkbox"
-        checked={isDark ? true : false}
-        onChange={toogleMode}
-      />
+      <input type="checkbox" className="" id="checkbox" checked={isDark ? true : false} onChange={toogleMode} />
       <label htmlFor="checkbox" className="toggle">
         <span className="toggle__handler">
           <span className="crater crater--1"></span>
