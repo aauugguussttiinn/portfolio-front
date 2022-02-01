@@ -1,8 +1,7 @@
 .toggleWrapper {
-  position:absolute;
-  top:23px;
-  right: 200px;
-  z-index: 10;
+  box-shadow: 0em 0em 2em 1rem $basic-color-white;
+
+  z-index: 1;
   transition: all .5s;
   @include phone{
     top:8px;

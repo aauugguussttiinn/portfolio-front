@@ -9,7 +9,7 @@ const DarkModeButton = () => {
   const { isDark, toogleMode } = useContext(DarkMode);
 
   return (
-    <div className="toggleWrapper" id="whateveriwant">
+    <div className="toggleWrapper">
       <input type="checkbox" className="" id="checkbox" checked={isDark ? true : false} onChange={toogleMode} />
       <label htmlFor="checkbox" className="toggle">
         <span className="toggle__handler">

@@ -9,7 +9,6 @@ import Home from 'pages/Home/Home';
 // COMPONENTS IMPORTS
 import Navigation from 'components/Navigation/Navigation';
 import DarkMode from 'context/darkMode';
-import DarkModeButton from 'components/DarkModeButton/DarkModeButton';
 
 
 function App() {
@@ -36,7 +35,6 @@ function App() {
     <Router>
       <DarkMode.Provider value={{ isDark, toogleMode: toogleMode }}>
         <Navigation />
-        <DarkModeButton/>
         <Routes>
           <Route exact path="/" element={ <Home />} />
         </Routes>

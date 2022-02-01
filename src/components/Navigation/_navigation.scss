@@ -1,11 +1,7 @@
 .navigation {
   position: absolute;
-  display: flex;
-  background-color: transparent;
   width: 100%;
-  z-index: 10;
-  align-items: center;
-  height: 5rem;
+  z-index: 1;
   padding: 1rem;
 
   @include phone {
@@ -57,48 +53,4 @@
     cursor: pointer;
   }
 
-
-
-  .dropdown-toggle {
-    background-color: var(--prim-color);
-    color: var(--basic-color-white);
-    margin: 15px;
-  }
-  .dropdown-item a{
-    color:#454545;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-  }
-  .dropdown-item-text{
-    color:#8186FE;
-  }
-  
-
-  .deconnexion{
-    background-color: none;
-    margin: 0;
-    font-size: 0.9rem;
-    color:var(--prim-color);
-    cursor: pointer;
-    width: 100%;
-    position: relative;
-    &::before{
-      content: '';
-      width: 0;
-      height: 2px;
-      background: var(--prim-color);
-      position: absolute;
-      left: 0;
-      bottom:0px;
-      transition: all .5s;
-    }
-    &:hover::before{
-      width: 100%;
-    }
-  }
-}
-
-.darkmode-button{
-  margin-left: 20px;
 }

@@ -9,12 +9,12 @@ const Home = () => {
 
   return(
     <div className="">
-      <div>T</div>
+      {/* <div>T</div>
       <div>E</div>
       <div>S</div>
       <div>T</div>
       <div>I</div>
-      <div>N</div>
+      <div>N</div> */}
     </div>
   )
 };
