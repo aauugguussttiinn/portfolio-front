@@ -3,19 +3,22 @@ import './App.css';
 
 // CONFIG IMPORTS
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // PAGES IMPORTS
-import Home from 'components/pages/Home';
+import Home from 'components/pages/Home/Home';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
+    <Router>
+      <Routes>
         <Route exact path="/" component={Home} />
-      </Switch>
-    </BrowserRouter>
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+
+
