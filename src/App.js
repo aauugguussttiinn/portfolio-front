@@ -38,7 +38,7 @@ function App() {
         <Navigation />
         <DarkModeButton/>
         <Routes>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" element={ <Home />} />
         </Routes>
       </DarkMode.Provider>
     </Router>

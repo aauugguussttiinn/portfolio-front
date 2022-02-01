@@ -21,8 +21,8 @@ const Navigation = () => {
           <NavLink exact to="/developpeur" activeClassName="nav-active" className="nav-link">
             Développeur
           </NavLink>
-          <NavLink exact to="/commercial" activeClassName="nav-active" className="nav-link">
-            Développeur
+          <NavLink exact to="/business" activeClassName="nav-active" className="nav-link">
+            Business
           </NavLink>
           <NavLink exact to="/mon-pitch" activeClassName="nav-active" className="nav-link">
             Mon pitch

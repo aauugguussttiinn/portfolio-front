@@ -18,15 +18,17 @@ $basic-color-dark:#292929;
 $modal-bg: rgba(0, 0, 0, 0.726);
 $modal-bg-dark: rgba(255, 255, 255, 0.726);
 
-$prim-color: #002bba;
-$transparency-prim-color: rgba(0, 43, 186, 0.7);
-$sec-color: #91B2E2;
-$transparency-sec-color: rgba(145, 178, 226, 0.9);
+$gradient-1: #5e17eb;
+$gradient-2: #2589BD;
+$gradient-3: #2589BD;
+
+$prim-color: #5e17eb;
+$sec-color: #2589BD;
 $third-color: #FFBF00;
-$success: #5DA271;
-$danger: #fb3333;
-$warning: #efef5b;
-$footer-color:#ebebeb;
+$success: #41EAD4;
+$danger: #F71735;
+$warning: #FF9F1C;
+$footer-color:#FDFFFC ;
 
 
 // Deep Shade Colors //
@@ -56,6 +58,10 @@ $jb-d-n:rgba(0,0,0,0.6);
 
 
 // ----- NIGHT MODE (DARK) ----- //
+
+$gradient-1-dark: #0F2027;
+$gradient-2-dark: #203A43;
+$gradient-3-dark: #2C5364;
 
 
 $prim-color-dark: #ffffff;
@@ -101,6 +107,7 @@ $phone-viewport:800px;
   @media (max-width: $phone-viewport) { @content; }
 }
 
+
 // $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 :root{
 
@@ -110,10 +117,12 @@ $phone-viewport:800px;
   --basic-color-grey:#{$basic-color-grey};
   --basic-color-dark:#{$basic-color-dark};
 
+  --gradient-1:#{$gradient-1};
+  --gradient-2:#{$gradient-2};
+  --gradient-3:#{$gradient-3};
+
   --prim-color:#{$prim-color};
-  --transparency-prim-color:#{$transparency-prim-color};
   --sec-color:#{$sec-color};
-  --transparency-sec-color: #{$transparency-sec-color};
   --third-color:#{$third-color};
   --success-color:#{$success};
   --danger-color:#{$danger};
@@ -121,18 +130,14 @@ $phone-viewport:800px;
   --footer-color:#{$footer-color};
 
   --prim-color-deep:#{$prim-color-deep};
-  --transparency-prim-color-deep:#{$transparency-prim-color-deep};
   --sec-color-deep:#{$sec-color-deep};
-  --transparency-sec-color-deep: #{$transparency-sec-color-deep};
   --third-color-deep:#{$third-color-deep};
   --success-color-deep:#{$success-deep};
   --danger-color-deep:#{$danger-deep};
   --warning-color-deep:#{$warning-deep};
 
   --prim-color-light:#{$prim-color-light};
-  --transparency-prim-color-light:#{$transparency-prim-color-light};
   --sec-color-light:#{$sec-color-light};
-  --transparency-sec-color-light: #{$transparency-sec-color-light};
   --third-color-light:#{$third-color-light};
   --success-color-light:#{$success-light};
   --danger-color-light:#{$danger-light};
@@ -150,10 +155,12 @@ $phone-viewport:800px;
   --basic-color-grey:#{$basic-color-grey};
   --basic-color-dark:#{$basic-color-white};
 
+  --gradient-1:#{$gradient-1-dark};
+  --gradient-2:#{$gradient-2-dark};
+  --gradient-3:#{$gradient-3-dark};
+
   --prim-color:#{$prim-color-dark};
-  --transparency-prim-color:#{$transparency-prim-color-dark};
   --sec-color:#{$sec-color-dark};
-  --transparency-sec-color: #{$transparency-sec-color-dark};
   --third-color:#{$third-color-dark};
   --success-color:#{$success-dark};
   --danger-color:#{$danger-dark};
@@ -161,18 +168,14 @@ $phone-viewport:800px;
   --footer-color:#{$footer-color-dark};
 
   --prim-color-deep:#{$prim-color-deep-dark};
-  --transparency-prim-color-deep:#{$transparency-prim-color-deep-dark};
   --sec-color-deep:#{$sec-color-deep-dark};
-  --transparency-sec-color-deep: #{$transparency-sec-color-deep-dark};
   --third-color-deep:#{$third-color-deep-dark};
   --success-color-deep:#{$success-deep-dark};
   --danger-color-deep:#{$danger-deep-dark};
   --warning-color-deep:#{$warning-deep-dark};
 
   --prim-color-light:#{$prim-color-light-dark};
-  --transparency-prim-color-light:#{$transparency-prim-color-light-dark};
   --sec-color-light:#{$sec-color-light-dark};
-  --transparency-sec-color-light: #{$transparency-sec-color-light-dark};
   --third-color-light:#{$third-color-light-dark};
   --success-color-light:#{$success-light-dark};
   --danger-color-light:#{$danger-light-dark};
@@ -188,7 +191,10 @@ $phone-viewport:800px;
 // All app CSS //
 
 #root {
+  background: linear-gradient(to right bottom, var(--gradient-2), var(--gradient-1), var(--gradient-1));
   background-color: var(--basic-color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 *{
@@ -210,10 +216,6 @@ $phone-viewport:800px;
 }
 
 body{
-
-  background-color: var(--basic-color-white);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
