@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ VARIABLES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ VARIABLES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ VARIABLES $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+// -------------------- FONTS VARIABLES -------------------- //
+$primary-font: "Hind";
+
+// -------------------- COLORS VARIABLES -------------------- //
+
+// ----- DAY MODE ----- //
+$basic-color-white:#ffffff;
+$basic-color-grey: #adb2b8;
+$basic-color-dark:#292929;
+$modal-bg: rgba(0, 0, 0, 0.726);
+$modal-bg-dark: rgba(255, 255, 255, 0.726);
+
+$prim-color: #002bba;
+$transparency-prim-color: rgba(0, 43, 186, 0.7);
+$sec-color: #91B2E2;
+$transparency-sec-color: rgba(145, 178, 226, 0.9);
+$third-color: #FFBF00;
+$success: #5DA271;
+$danger: #fb3333;
+$warning: #efef5b;
+$footer-color:#ebebeb;
+
+
+// Deep Shade Colors //
+$prim-color-deep: #002295;
+$transparency-prim-color-deep: rgba(0, 34, 149, 0.7);
+$sec-color-deep: #748eb5;
+$transparency-sec-color-deep: rgba(116, 142, 181, 0.9);
+$third-color-deep:#cc9900;
+$success-deep:#4a825a;
+$danger-deep:#c92929;
+$warning-deep:#e8e815;
+
+
+// Light Shade Colors //
+$prim-color-light: #3355c8;
+$transparency-prim-color-light: rgba(51, 85, 200, 0.7);
+$sec-color-light: #a7c1e8;
+$transparency-sec-color-light: rgba(185, 205, 237, 0.9);
+$third-color-light: #ffcc33;
+$success-light:#7db58d;
+$danger-light:#fc5c5c;
+$warning-light:#f1f173;
+
+// Jumbotron colors
+$jb-u-n:rgba(0,0,0,0.2);
+$jb-d-n:rgba(0,0,0,0.6);
+
+
+// ----- NIGHT MODE (DARK) ----- //
+
+
+$prim-color-dark: #ffffff;
+$transparency-prim-color-dark: rgba(255, 255, 255, 0.7);
+$sec-color-dark: #383838;
+$transparency-sec-color-dark: rgba(231, 231, 231, 0.9);
+$third-color-dark: #b8b8b8;
+$success-dark: #7db58d;
+$danger-dark: #fc5c5c;
+$warning-dark: #f1f173;
+$footer-color-dark:#7e7e7e;
+
+// Deep Shade Colors (DARK) //
+
+$prim-color-deep-dark: #002295;
+$transparency-prim-color-deep-dark: rgba(0, 17, 74, 0.7);
+$sec-color-deep-dark: #748eb5;
+$transparency-sec-color-deep-dark: rgba(116, 142, 181, 0.9);
+$third-color-deep-dark:#cc9900;
+$success-deep-dark:#4a825a;
+$danger-deep-dark:#c92929;
+$warning-deep-dark:#e8e815;
+
+
+// Light Shade Colors (DARK) //
+$prim-color-light-dark: #3355c8;
+$transparency-prim-color-light-dark: rgba(51, 85, 200, 0.7);
+$sec-color-light-dark: #a7c1e8;
+$transparency-sec-color-light-dark: rgba(185, 205, 237, 0.9);
+$third-color-light-dark: #ffcc33;
+$success-light-dark:#7db58d;
+$danger-light-dark:#fc5c5c;
+$warning-light-dark:#f1f173;
+
+// Jumbotron colors
+$jb-u-d:rgba(0,0,0,0.5);
+$jb-d-d:rgba(0,0,0,0.9);
+
+// Other variables & mixin //
+$phone-viewport:800px;
+
+@mixin phone {
+  @media (max-width: $phone-viewport) { @content; }
+}
+
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+:root{
+
+  --modal-background:#{$modal-bg};
+  --modal-color:#{$basic-color-white};
+  --basic-color-white:#{$basic-color-white};
+  --basic-color-grey:#{$basic-color-grey};
+  --basic-color-dark:#{$basic-color-dark};
+
+  --prim-color:#{$prim-color};
+  --transparency-prim-color:#{$transparency-prim-color};
+  --sec-color:#{$sec-color};
+  --transparency-sec-color: #{$transparency-sec-color};
+  --third-color:#{$third-color};
+  --success-color:#{$success};
+  --danger-color:#{$danger};
+  --warning-color:#{$warning};
+  --footer-color:#{$footer-color};
+
+  --prim-color-deep:#{$prim-color-deep};
+  --transparency-prim-color-deep:#{$transparency-prim-color-deep};
+  --sec-color-deep:#{$sec-color-deep};
+  --transparency-sec-color-deep: #{$transparency-sec-color-deep};
+  --third-color-deep:#{$third-color-deep};
+  --success-color-deep:#{$success-deep};
+  --danger-color-deep:#{$danger-deep};
+  --warning-color-deep:#{$warning-deep};
+
+  --prim-color-light:#{$prim-color-light};
+  --transparency-prim-color-light:#{$transparency-prim-color-light};
+  --sec-color-light:#{$sec-color-light};
+  --transparency-sec-color-light: #{$transparency-sec-color-light};
+  --third-color-light:#{$third-color-light};
+  --success-color-light:#{$success-light};
+  --danger-color-light:#{$danger-light};
+  --warning-color-light:#{$warning-light};
+
+  --jumbotron-up:#{$jb-u-n};
+  --jumbotron-down:#{$jb-d-n};
+
+}
+.dark-mode{
+
+  --modal-background:#{$modal-bg-dark};
+  --modal-color:#{$basic-color-dark};
+  --basic-color-white:#{$basic-color-dark};
+  --basic-color-grey:#{$basic-color-grey};
+  --basic-color-dark:#{$basic-color-white};
+
+  --prim-color:#{$prim-color-dark};
+  --transparency-prim-color:#{$transparency-prim-color-dark};
+  --sec-color:#{$sec-color-dark};
+  --transparency-sec-color: #{$transparency-sec-color-dark};
+  --third-color:#{$third-color-dark};
+  --success-color:#{$success-dark};
+  --danger-color:#{$danger-dark};
+  --warning-color:#{$warning-dark};
+  --footer-color:#{$footer-color-dark};
+
+  --prim-color-deep:#{$prim-color-deep-dark};
+  --transparency-prim-color-deep:#{$transparency-prim-color-deep-dark};
+  --sec-color-deep:#{$sec-color-deep-dark};
+  --transparency-sec-color-deep: #{$transparency-sec-color-deep-dark};
+  --third-color-deep:#{$third-color-deep-dark};
+  --success-color-deep:#{$success-deep-dark};
+  --danger-color-deep:#{$danger-deep-dark};
+  --warning-color-deep:#{$warning-deep-dark};
+
+  --prim-color-light:#{$prim-color-light-dark};
+  --transparency-prim-color-light:#{$transparency-prim-color-light-dark};
+  --sec-color-light:#{$sec-color-light-dark};
+  --transparency-sec-color-light: #{$transparency-sec-color-light-dark};
+  --third-color-light:#{$third-color-light-dark};
+  --success-color-light:#{$success-light-dark};
+  --danger-color-light:#{$danger-light-dark};
+  --warning-color-light:#{$warning-light-dark};
+
+  --jumbotron-up:#{$jb-u-d};
+  --jumbotron-down:#{$jb-d-d};
+
+}
+// $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+// All app CSS //
+
+#root {
+  background-color: var(--basic-color-white);
+}
+
+*{
+  font-family: $primary-font;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+
+  a {
+    color: var(--basic-color-white);
+  }
+  a:hover {
+     color: var(--sec-color);
+  }
+}
+
+body{
+
+  background-color: var(--basic-color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.page-padding {
+  padding-top: 70px;
+  min-height: 100vh;
+}
+
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none !important;
+  color: $third-color !important;
+  font-weight: normal !important;
+  font-family: 'Verdana' !important;
+}
+
+
+.clickable {
+  cursor: pointer;
+}
+
+/* ------------------------- FLEX ------------------------- */
+
+
+.d-flex {
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+}
+
+.d-flex-nowrap {
+  display: flex;
+  flex: auto;
+  flex-wrap: no-wrap;
+}
+
+.d-flex-col {
+  flex-direction: column;
+}
+
+.d-flex-row {
+  flex-direction: row;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
+
+.block-centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.y-centered {
+  align-items: center;
+  align-self: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ------------------------- COLUMNS ------------------------- */
+
+.grid {
+  display: grid;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-10 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 60%;
+}
+
+.col-6 {
+  width: 45%;
+}
+
+.col-5 {
+  width: 42%;
+}
+
+.col-4 {
+  width: 30%;
+}
+
+.col-3 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 15%;
+}
+
+
+/* ------------------------- HEADERS ------------------------- */
+
+h1, h2, h3, h4, h5, h6 {
+  // display: inline-block;
+  font-family: 'Helvetica';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.div {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  vertical-align: baseline !important;
+}
+
+p {
+  margin: 0.25em 0em;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 1.75rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
+
+
+/* ------------------------- MARGINS ------------------------- */
+
+.jb-container {
+  margin : 10%;
+  padding: 2rem;
+  border-radius: 15px;
+  background-color: rgba(139, 185, 140, 0.9);
+}
+
+.container {
+  margin: 0% 5%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.m-0{
+  margin: 0;
+}
+
+.m-1{
+  margin: 0.5rem;
+}
+
+.m-2{
+  margin: 0.75rem;
+}
+
+.m-3{
+  margin: 1rem;
+}
+
+.m-4{
+  margin: 1.5rem;
+}
+
+.m-5{
+  margin: 3rem;
+}
+
+.my-0 {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+.my-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.my-2 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.my-3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-5 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mx-1 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.mx-3 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-4 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.mx-5 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.75rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-05 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.75rem;
+}
+
+.mb-3 {
+  margin-bottom: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+/* ------------------------- PADDING ------------------------- */
+
+.p-0{
+  padding: 0;
+}
+
+.p-1{
+  padding: 0.5rem;
+}
+
+.p-2{
+  padding: 0.75rem;
+}
+
+.p-3{
+  padding: 1rem;
+}
+
+.p-4{
+  padding: 1.5rem;
+}
+
+.p-5{
+  padding: 3rem;
+}
+
+.py-1 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-2 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-4 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.px-1 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-2 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-3 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-5 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.pt-1 {
+  padding-top: 0.5rem;
+}
+
+.pt-2 {
+  padding-top: 0.75rem;
+}
+
+.pt-3 {
+  padding-top: 1rem;
+}
+
+.pt-4 {
+  padding-top: 1.5rem;
+}
+
+.pt-5 {
+  padding-top: 3rem;
+}
+
+
+
+/* ------------------------- TEXT STYLING ------------------------- */
+
+.text-primary {
+  color: $prim-color !important;
+}
+
+.text-secondary {
+  color: $sec-color !important;
+}
+
+.text-secondary-deep {
+  color: $sec-color-deep !important;
+}
+
+.text-third {
+  color: $third-color !important;
+}
+
+.text-third-light {
+  color: $third-color-light !important;
+}
+
+.text-success {
+  color: $success !important;
+}
+
+.text-danger {
+  color: $danger !important;
+}
+
+.text-warning {
+  color: $warning !important;
+}
+
+.text-white {
+  color: $basic-color-white !important;
+}

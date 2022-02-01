@@ -1,0 +1,65 @@
+nav {
+  margin: 0 !important;
+  padding: 0.25em 0em !important;
+}
+
+.navbar {
+  position: fixed;
+  color: $basic-color-white !important;
+  background-color: $prim-color;
+  width: 100%;
+  padding: 1.25em;
+  z-index: 2;
+}
+
+.nav-height {
+  margin-top: 12em;
+}
+
+.nav-item {
+  margin: 0em 3em;
+  padding: 0.3em 0em;
+}
+
+.nav-title {
+  color: $basic-color-white !important;
+  &:hover {
+    font-weight: bold;
+  }
+}
+
+.navbar a {
+  text-decoration: none;
+  color: $basic-color-white;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  &:hover {
+    .dropdown-container {
+      display: inline-block;
+    }
+  }
+}
+
+.dropdown-container {
+  display: none;
+  position: absolute;
+  margin: 0em 1em;
+  background-color: $prim-color;
+  min-width: 5em;
+  z-index: 2;
+}
+
+.dropdown-item {
+  padding: 1em 0em;
+}
+
+.active-page {
+  border-bottom: 2px solid $basic-color-white;
+}
