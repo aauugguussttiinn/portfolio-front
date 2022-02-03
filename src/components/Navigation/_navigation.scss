@@ -9,16 +9,18 @@
   }
 
   .nav-link{
+    
     padding: 10px;
     position: relative;
-    color: var(--basic-color-white);
+    color: $basic-color-white;
+    
     text-decoration: none;
     transition: all .5s;
     &::after {
       content: '';
       width: 0;
       height: 3px;
-      background: var(--basic-color-white);
+      background: $basic-color-white;
       position: absolute;
       bottom: 1px;
       left: 50%;
@@ -27,7 +29,7 @@
       transition: all .5s;
     }
     &:hover{
-    color:var(--basic-color-white);
+    color:$basic-color-white;
       &::after{
         width: 85%;
       }
