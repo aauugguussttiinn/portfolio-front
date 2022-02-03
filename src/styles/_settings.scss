@@ -18,9 +18,9 @@ $basic-color-dark:#292929;
 $modal-bg: rgba(0, 0, 0, 0.726);
 $modal-bg-dark: rgba(255, 255, 255, 0.726);
 
-$gradient-1: #5e17eb;
-$gradient-2: #2589BD;
-$gradient-3: #2589BD;
+$gradient-color-1: #5e17eb;
+$gradient-color-2: #2589BD;
+$gradient-color-3: #2589BD;
 
 $prim-color: #5e17eb;
 $sec-color: #2589BD;
@@ -59,9 +59,9 @@ $jb-d-n:rgba(0,0,0,0.6);
 
 // ----- NIGHT MODE (DARK) ----- //
 
-$gradient-1-dark: #0F2027;
-$gradient-2-dark: #203A43;
-$gradient-3-dark: #2C5364;
+$gradient-color-1-dark: #0F2027;
+$gradient-color-2-dark: #203A43;
+$gradient-color-3-dark: #2C5364;
 
 
 $prim-color-dark: #ffffff;
@@ -111,9 +111,9 @@ $phone-viewport:800px;
   --basic-color-grey:#{$basic-color-grey};
   --basic-color-dark:#{$basic-color-dark};
 
-  --gradient-1:#{$gradient-1};
-  --gradient-2:#{$gradient-2};
-  --gradient-3:#{$gradient-3};
+  --gradient-1:#{$gradient-color-1};
+  --gradient-2:#{$gradient-color-2};
+  --gradient-3:#{$gradient-color-3};
 
   --prim-color:#{$prim-color};
   --sec-color:#{$sec-color};
@@ -149,9 +149,9 @@ $phone-viewport:800px;
   --basic-color-grey:#{$basic-color-grey};
   --basic-color-dark:#{$basic-color-white};
 
-  --gradient-1:#{$gradient-1-dark};
-  --gradient-2:#{$gradient-2-dark};
-  --gradient-3:#{$gradient-3-dark};
+  --gradient-1:#{$gradient-color-1-dark};
+  --gradient-2:#{$gradient-color-2-dark};
+  --gradient-3:#{$gradient-color-3-dark};
 
   --prim-color:#{$prim-color-dark};
   --sec-color:#{$sec-color-dark};
