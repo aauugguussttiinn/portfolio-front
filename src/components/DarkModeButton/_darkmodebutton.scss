@@ -1,6 +1,5 @@
 .toggleWrapper {
-  box-shadow: 0em 0em 2em 1rem $basic-color-white;
-
+  
   z-index: 1;
   transition: all .5s;
   @include phone{
@@ -16,6 +15,7 @@
 }
 
 .toggle {
+  box-shadow: 0em 0em 5em 1.5rem $basic-color-white;
   cursor: pointer;
   display: inline-block;
   position: relative;
